@@ -1,0 +1,21 @@
+public class Solution {
+    public int[] TwoSum(int[] nums, int target) {
+        
+        int arrayLength = nums.Length;
+        
+        Console.WriteLine(arrayLength);
+        
+        
+        for(int i=0; i<arrayLength; i++){
+            for(int j=i+1; j<arrayLength; j++){
+                if(nums[i]+nums[j] == target){
+                    Console.WriteLine("{0},{1}",i,j);
+                    return new int[]{
+                        i,j
+                    };
+                }
+            }
+        }
+            return Array.Empty < int > ();
+    }
+}
